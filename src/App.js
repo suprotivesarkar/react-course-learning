@@ -1,25 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Welcome from './components/Welcome';
+import Greet from './components/Greet';
+import Counter from './components/Counter';
+import Message from './components/Message';
+import ClassClick from './components/ClassClick';
+import FunctionClick from './components/FunctionClick';
+import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import styles from './components/myStyles.module.css'
+import './components/myStyles.css'
+import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render(){
+    return (
+      <div className="App">
+        <LifecycleA/>
+        {/*<Form/>
+        <div className="failure">Failure</div>
+        <div className={styles.success}>Success</div>
+        <Stylesheet primary={true}/>
+        <NameList/>
+        <UserGreeting/>
+        <ParentComponent/>
+         <ClassClick/>
+        <FunctionClick/>
+        <EventBind/>
+        <Greet firstName="Suprotive" lastName="Sarkar"/>
+        <Welcome greet="Nice to Meet You"/>
+        <Message/>
+        <Counter value={2}/> */}
+      </div>
+    );
+  }
+  
 }
 
 export default App;
