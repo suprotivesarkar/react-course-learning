@@ -15,13 +15,19 @@ import styles from './components/myStyles.module.css'
 import './components/myStyles.css'
 import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
+import Fragment from './components/Fragment';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 
 class App extends React.Component {
   render(){
     return (
       <div className="App">
+        <RefsDemo/>
+        {/*<ParentComp/>
+        <Fragment/>
         <LifecycleA/>
-        {/*<Form/>
+        <Form/>
         <div className="failure">Failure</div>
         <div className={styles.success}>Success</div>
         <Stylesheet primary={true}/>
