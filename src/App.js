@@ -18,13 +18,17 @@ import LifecycleA from './components/LifecycleA';
 import Fragment from './components/Fragment';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
 
 class App extends React.Component {
   render(){
     return (
       <div className="App">
+        <FRParentInput/>
+        {/*<FocusInput/>
         <RefsDemo/>
-        {/*<ParentComp/>
+        <ParentComp/>
         <Fragment/>
         <LifecycleA/>
         <Form/>
