@@ -8,6 +8,7 @@ class FRParentInput extends Component {
     }
     clickHandler=()=>{
         this.inputRef.current.focus()
+        alert(this.inputRef.current.value)
     }
   render() {
     return (
